@@ -1,0 +1,14 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: SRM Credit Engine
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://127.0.0.1:5432/srm}
+    password: ${DATABASE_PASSWORD:postgres}
+    username: ${DATABASE_USER:postgres}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
